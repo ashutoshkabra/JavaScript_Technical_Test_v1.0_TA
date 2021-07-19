@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2. Modules</title>
+    <script type="module" src="Scripts/qnAns_02.js"></script>
+</head>
+<body>
+<div>
+    <h1>Customer Module</h1>
+    <h3>Customer Details</h3>
+    <table>
+        <tr>
+            <td style="text-align: right"><label for="firstName">First Name :</label></td>
+            <td>
+                <input id="firstName" type="text" name="firstName" placeholder="First Name" required/>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right"><label for="lastName">Last Name :</label></td>
+            <td>
+                <input id="lastName" type="text" name="lastName" placeholder="Last Name" required/>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right"><label for="email">E-Mail :</label></td>
+            <td>
+                <input id="email" type="email" name="email" placeholder="Email" required/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+    <br/>
+    <button class="btn"  onclick="getFullName();return false;">Get Fullname</button>
+    <button class="btn" onclick="getEmail();return false;">Get Email</button>
+    <div>
+        <br />
+        <label id="fullName"></label>
+        <br />
+        <label id="emailId"></label>
+    </div>
+</div>
+</body>
+</html>

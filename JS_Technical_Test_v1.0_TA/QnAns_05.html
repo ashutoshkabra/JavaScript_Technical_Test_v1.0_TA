@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>5. Event Delegation</title>
+    <script src="Scripts/qnAns_05.js" defer=""></script>
+    <style>
+        article.tab {
+            display: none;
+        }
+        article.tab.active {
+                display: block;
+            }
+    </style>
+</head>
+<body>
+<h1>Event Delegation - Active Tab</h1>
+    <div class="tabs">
+        <ul class="tabs-header">
+            <li class="active"><a href="#tab-1">Tab 1</a></li>
+            <li><a href="#tab-2">Tab 2</a></li>
+            <li><a href="#tab-3">Tab 3</a></li>
+        </ul>
+        <article class="tab active" id="tab-1">
+            Content 1
+        </article>
+        <article class="tab" id="tab-2">
+            Content 2
+        </article>
+        <article class="tab" id="tab-3">
+            Content 3
+        </article>
+    </div>
+</body>
+</html>
